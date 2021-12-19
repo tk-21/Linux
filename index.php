@@ -18,3 +18,24 @@ $members = [
 foreach($members as $key => $value) {
 	echo sprintf("%d is %s", $key, $value) . PHP_EOL;
 }
+
+
+
+
+class janken {
+
+	public function g($num) {
+		if($num > 1) {
+			return false;
+		}
+		return true;
+	}
+}
+
+	$janken = new janken();
+
+	$num = 4;
+
+	if(!$janken->g($num)) {
+		echo "ok" . PHP_EOL;
+	}
